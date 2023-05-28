@@ -1,0 +1,9 @@
+.Dash{
+    display: flex;
+    align-items: center;
+
+}
+span{
+  color: #0e3e4a;
+  letter-spacing: 1px;
+}

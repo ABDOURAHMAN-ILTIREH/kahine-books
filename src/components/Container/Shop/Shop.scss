@@ -1,0 +1,173 @@
+@import "../../../../src/scss/scss_content_features" ;
+
+.shop{
+    position: fixed  !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000a5;
+    z-index: 9999;
+ ::-webkit-scrollbar {
+  width: 7px;
+} 
+
+::-webkit-scrollbar-thumb {
+   border-radius: $border_redius; 
+   background: $background_button_color
+} 
+
+ //Handle on hover 
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}    
+
+    .content_products{
+       position: absolute;
+       top: 0;
+       right: 0;
+       height: 100vh;
+       width: 500px;
+       background-color: #ffff;
+       padding: 25px 15px;
+       
+       .content_top{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        .icons{
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .title{
+            margin: 0 7px;
+            font-size: $font_size;
+            font-weight: 400;
+            color: $color_text;
+        }
+        .dec{
+          font-size: $font_size;
+          color: #bb4a4a;
+        }
+       }
+       .products{
+           display: flex;
+           flex-direction: column;
+           overflow: scroll;
+           height: 80vh;
+           .cart_product{
+            display: flex;
+            align-content: center;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #b6b5b5;
+            border-top: 1px solid #b6b5b5;
+            padding: 10px;
+            .images{
+                margin-right: 15px;
+                img{
+                    width: 70px;
+                }
+            }
+            .content_dec{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .top_dec, .bottom_dec{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .bottom_dec{
+                   margin-top: 20px;
+                   .select_qty{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 5px;
+                        span{
+                            padding: 5px;
+                            border: 1px solid #ccc;
+                            cursor: pointer;
+                            font-size: $font_size;
+                        }
+                    }
+                    .icons{
+                        font-size: 18px;
+                        cursor: pointer;
+                    }
+                }
+                .top_dec{
+                    .title{
+                        font-weight: $font_weight;
+                        color: $color_text;
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: $font_weight;
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+            }
+           }
+       }
+       .content_subtotals{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: #dddddd;
+          width: 100%;
+          border-radius: $border_redius;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          .dec_subtotals{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .title_subtotals{
+                font-size: 16px;
+                font-weight: $font_weight;
+            }
+            .price_subtotals{
+                font-size: $font_size;
+                font-weight: $font_weight;
+                span{
+                    font-size: 16px;
+                    font-weight: $font_weight;
+                }
+            }
+          }
+          a{
+             button{
+                 margin-top: 15px;
+                 width: 100%;
+                 background-color: $background_button_color;
+                 padding: 8px 12px;
+                 border: none;
+                 outline: none;
+                 font-size: $font_size;
+                 border-radius: $border_redius;
+                 text-transform: capitalize;
+                 cursor: pointer;
+                 color: #eee;
+                }
+                text-decoration: none;
+            }
+       }
+
+    }
+
+    @media screen and (max-width: 577px) {
+        .content_products{
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 300px;
+            background-color: #ffff;
+            padding: 25px 15px;
+        }     
+    }
+}

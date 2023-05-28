@@ -1,0 +1,236 @@
+@import "../../../../src/scss/scss_content_features" ;
+
+
+.cart{
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: $padding_conpoments_big;
+
+    .content_cart{
+       display: flex;
+       align-items: flex-start;
+       justify-content: center;
+       margin-bottom: 35px;
+
+       .box_left{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: $border_redius-lg;
+
+        img{
+            width: 300px;
+        }
+       }
+       .box_right{
+        margin-left: 50px;
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+
+
+            .title{
+                font-weight: 500;
+                text-transform: capitalize;
+                color: $color_text;
+                font-size: 20px;
+            }
+            .dec_books{
+                margin: 15px 0;
+                .dec_title{
+                    font-weight: 500;
+                    font-size: $font_size;
+                }
+                .dec_text{
+                    margin-top: 10px;
+                    font-size: $font_size;
+                }
+            }
+            .price{
+                span{
+                    font-weight: $font_weight;
+                    font-size: $font_size_middle;
+                }
+            }
+            .button-product{
+                margin-top: 15px;
+                button{
+                    background-color: $background_button_color;
+                    color: #eee;
+                    padding: 8px 12px;
+                    border: none;
+                    outline: none;
+                    font-size: $font_size;
+                    border-radius: $border_redius;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                }
+            }
+        }
+       }
+    }
+    .wrapper_reviews{
+       margin: 25px 0;
+       .arrow_title{
+        display: flex;
+        align-items: center;
+
+        .arrow-icon{
+            width: $font_size_big;
+            transition: 0.3s ease;
+            cursor: pointer;
+            margin-left: 15px;
+            &.up {
+                transform: rotate(180deg);
+            }
+        }
+        .title{
+            font-weight: 500;
+            text-transform: capitalize;
+            color: $color_text;
+            font-size: 20px;
+        }
+       }
+       .clients_reviews{
+         margin: 10px 0;
+        .content_reviews{
+            margin-bottom: 15px;
+            .name_client{
+                font-weight: $font_weight;
+                text-transform: capitalize;
+                color: $color_text;
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+            .decs_client{
+                font-size: $font_size;
+                color: $color_text;
+            }
+            .start_satisfaction{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                .start{
+                    font-size: $font_size_middle;
+                }
+            }
+        }
+    }
+    .commente{
+        margin-top: 5px;
+        padding: 8px 12px;
+        border: none;
+        outline: none;
+        font-size: $font_size;
+        border-radius: $border_redius;
+        text-transform: capitalize;
+        background-color: $background_color;
+        color: #ffff;
+        cursor: pointer;
+    }
+    }
+    .simulary_products{
+        .title{
+         font-weight: 500;
+         text-transform: capitalize;
+         color: $color_text;
+         font-size: 20px;
+        }
+        .books_container{
+         width: 100%;
+         margin: 15px 0;
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         gap: 20px;
+ 
+         .wrapper{
+             padding: 15px;
+             border-radius: $border_redius;
+             background-color: #ffffff;
+             box-shadow: 2px 4px 10px 1px #c9c9c978;
+             display: flex;
+             flex-direction: column;
+ 
+             .image_content{
+                 margin-bottom: 5px;
+                 width: 100%;
+                 text-align: center;
+                 img{
+                     width: $image_with;
+                     height: max-content;
+                     object-fit: cover;
+                 }
+             }
+             .dec_wrapper{
+                 display: flex;
+                 flex-direction: column;
+                 text-transform: capitalize;
+                     .title{
+                         font-size: $font_size_middle;
+                         font-weight: 500;
+                         margin-bottom: 5px;
+                         text-decoration: none;
+                         color: $color_text;
+                         &:hover{
+                             text-decoration: underline;
+                         }
+                     }
+                     .author,.text,.price{
+                         font-size: $font_size;
+                         font-weight: $font_weight;
+                     }
+                     .price{
+                         margin-top: 5px;
+                         text-transform: lowercase;
+                         span{
+                             font-size: $font_size_middle;
+                             font-weight: $font_weight;
+                         }
+                     } 
+                     button{
+                         width: max-content;
+                         margin-top: 5px;
+                         padding: 8px 12px;
+                         border: none;
+                         outline: none;
+                         font-size: $font_size;
+                         border-radius: $border_redius;
+                         text-transform: capitalize;
+                         background-color: $background_color;
+                         color: #ffff;
+                         cursor: pointer;
+                     }
+                 }
+             }
+
+        }
+    }
+    @media screen and (max-width: 577px) {
+        .content_cart{
+            display: flex;
+            flex-direction: column;
+           .box_right{
+            margin: 15px 0;
+           }
+        }
+    }
+    @media screen and (max-width:780px){
+        .simulary_products  .books_container{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+    @media screen and (max-width:580px){
+        .simulary_products  .books_container{
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+        }
+    }
+    @media screen and (max-width:380px){
+        .simulary_products  .books_container{
+            grid-template-columns: 1fr;
+        }
+    }
+}

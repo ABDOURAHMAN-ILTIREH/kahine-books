@@ -1,0 +1,176 @@
+@import "../../../../src/scss/scss_content_features" ;
+
+.books_customer{
+    width: 100%;
+    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: $padding_conpoments;
+    
+        .content_books_wrapper{
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            .font-hidden,.top_icon{
+                display: none;
+            }
+            .icon-search{
+                font-size: 20px;
+                cursor: pointer;
+            }
+            
+            .Navbar{
+                width: 100%;
+                background: #ffff;
+                padding: 10px;
+                .top_font{
+                    display: flex;
+                    align-items: center;
+                    .text_filter{
+                         font-size: 16px;
+                         font-weight: 300;
+                         color: $color_text;
+                         text-transform: capitalize;
+                         margin-left: 5px;
+                    }
+                    .tune_icon{
+                        font-size: 18px;
+                    }
+                }
+    
+                .input_search{
+                    margin: 15px 0;
+                    display: flex;
+                    align-items: center;
+                    border: 1.5px solid $background_color;
+                    padding: 3px;
+                    border-radius: 5px;
+                    input{
+                        width: 100%;
+                        height: 100%;
+                        font-size: 14px;
+                        outline: none;
+                        border: none;
+                        padding: 5px;
+                        background-color: transparent;
+                    }
+                    input::placeholder{
+                        font-size: 14px;
+                        color: $color_text;
+                    }
+                    .product-search{
+                         padding: 5px 10px;
+                         background-color: $background_color;
+                         color: #fff;
+                         font-size: 14px;
+                         border: 1px solid $background_color;
+                         cursor: pointer;
+                         transition: all 0.3s;
+
+                         &:hover{
+                            border-radius: 10px;
+                         }
+                      }
+                }
+                .top_icon{
+                    font-size: $font_size_middle;
+                    cursor: pointer;
+                }
+                
+            }
+            .books_container{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 25px;
+                margin-top: 15px;
+
+                .wrapper{
+                    padding: 15px;
+                    border-radius: $border_redius;
+                    background-color: #ffffff;
+                    box-shadow: 2px 4px 10px 1px #c9c9c978;
+                    display: flex;
+                    flex-direction: column;
+
+                    .image_content{
+                        margin-bottom: 5px;
+                        width: 100%;
+                        text-align: center;
+                        img{
+                            width: $image_with;
+                            height: max-content;
+                            object-fit: cover;
+                        }
+                    }
+                    .dec_wrapper{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 10px;
+                        text-transform: capitalize;
+                            .title{
+                                font-size: $font_size_middle;
+                                font-weight: 500;
+                                margin-bottom: 5px;
+                                text-decoration: none;
+                                color: $color_text;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            
+                            .author,.text,.price{
+                                font-size: $font_size;
+                                font-weight: $font_weight;
+                            }
+                            .price{
+                                margin-top: 5px;
+                                text-transform: lowercase;
+                                span{
+                                    font-size: $font_size_middle;
+                                    font-weight: $font_weight;
+                                }
+                            } 
+                            button{
+                                width: max-content;
+                                margin-top: 5px;
+                                padding: 8px 12px;
+                                border: none;
+                                outline: none;
+                                font-size: $font_size;
+                                border-radius: $border_redius;
+                                text-transform: capitalize;
+                                background-color: $background_color;
+                                color: #ffff;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+            }
+    }
+    @media screen and (max-width: 780px){
+        .content_books_wrapper{
+            .books_container{
+                 grid-template-columns: repeat(3,1fr)!important;
+            }
+        }
+    }
+    @media screen and (max-width: 670px){
+        .content_books_wrapper{
+            .books_container{
+                grid-template-columns: repeat(2,1fr)!important;
+            }
+        }
+    }
+    @media screen and (max-width: 425px) {
+        .content_books_wrapper{
+            .books_container{
+                grid-template-columns: 1fr !important;
+       
+            }
+        }   
+    }
+}
+    

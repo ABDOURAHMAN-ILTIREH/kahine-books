@@ -1,0 +1,31 @@
+//text color
+$color_text: #062a3c;
+$color: #c6dddd;
+
+//botton backgorung color
+$background_button_color: #062a3c;
+$background_color: #062a3c;
+
+// font weight
+$font_weight: 500;
+$font_weight_lg: $font_weight + 300;
+
+// font zise small - middle - big
+$font_size: 14px;
+$font_size_big: $font_size * 2;
+$font_size_middle: $font_size + 6;
+
+// padding top & bottom the components
+$padding_conpoments: 50px 10px;
+$padding_conpoments_big: 100px 10px;
+
+
+// border redius the buttons
+$border_redius: 5px;
+$border_redius-lg: $border_redius * 3;
+
+// image with
+$image_with : 150px;
+
+// dark colors
+$color_text_dark:#dddddd;

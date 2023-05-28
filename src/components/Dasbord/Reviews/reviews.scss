@@ -1,0 +1,109 @@
+.reviews{
+    padding: 20px;
+    .top_content{
+       padding: 15px 10px;
+       background-color: #f0f0f0;
+       box-shadow: 2px 4px 5px 1px #c9c9c978;   
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       border-radius: 10px;
+       border-left: 3px solid #0e5c6b;
+       border-right: 3px solid #0e5c6b;
+       margin-bottom: 25px;
+       h1{
+        color: #0e5c6b;
+        font-weight: 300;
+        font-size: 18px;
+       }
+       p{
+        font-size: 15px;
+        color: gray;
+        font-weight: 300;
+       }
+    }
+    .table_content{
+        margin: 20px 0;
+        height: 80vh;
+        overflow-y: scroll;
+        border-radius: 10px;
+        box-shadow: 2px 4px 5px 1px #c9c9c978;   
+        padding: 5px;
+        table{
+            overflow-y: scroll;
+            width: 100%;
+            max-height: 800px;
+            td:nth-child(1){
+                width: 150px;
+            }
+            td:nth-child(2){
+                width: 100px;
+            }
+            td:nth-child(3){
+                width: 200px;
+            }
+            thead{
+                border-radius: 5px;
+                background-color: #f0f0f0;
+                tr{
+                    td{
+                        padding: 7px;
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: 500;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    padding:15px 10px;
+                    text-align: center;
+                    p{
+                      font-size: 14px;
+                      font-weight: 300;
+                      color: #062a3c;
+                    }
+                }
+                .type_reviews{
+                        p{
+                            color: #238623;
+                            background-color: #bbd8c4;
+                           padding: 8px;
+                           border-radius: 20px;
+                           font-size: 14px;
+                           font-weight: 500;
+                           text-transform: capitalize;
+                           .icons{
+                            font-size: 15px;
+                             color: #238623;
+                           }                    
+                        }
+                }
+                .wrapper_books{
+                    display: flex;
+                    align-items: flex-start;
+                    text-align: left;
+                    .images{
+                        img{
+                            width: 50px;
+                            object-fit: cover;
+                        }
+                    }
+                    .dec_book{
+                        margin-left: 5px;
+                       h3{
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #062a3c;
+                        text-transform: capitalize;
+                       }
+                    }
+                }
+            }
+        }
+    
+    }
+}

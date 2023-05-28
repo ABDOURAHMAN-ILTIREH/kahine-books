@@ -1,0 +1,110 @@
+@import "../../../../src/scss/scss_content_features" ;
+
+footer{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1224px;
+    .container{
+        margin: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        div{
+            margin-right: 15px;
+            text-align: flex-start;
+            
+            h1{
+                font-size: 16px;
+                text-transform: capitalize;
+                color: $color_text;
+                margin-bottom: 20px;
+                font-weight: $font_weight;
+            }
+            ul{
+                list-style: none;
+                li{
+                    font-size: $font_size;
+                    color: #595353;
+                    margin-bottom: 10px;
+                    font-weight: $font_weight;
+                    cursor: pointer;
+                    text-transform: capitalize;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+            p{
+                    font-size: $font_size;
+                    color: #595353;
+                    margin-bottom: 10px;
+                    font-weight: $font_weight;
+            }
+            .social_Media{
+                margin-top: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                span{
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    box-shadow: 2px 3px 4px #00000066;
+
+                    .icons{
+                        color: $color_text;
+                        font-size: $font_size_middle;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .title{
+            .logo{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 70px;
+                    object-fit: contain;
+                }
+                h2{
+                    font-size: $font_size_middle;
+                    font-weight: $font_weight;
+                    text-transform: capitalize;
+                    color: $color_text;
+                }
+            }
+            p{
+                font-size: $font_size;
+                margin: 15px;
+                color: #595353;
+                font-weight: $font_weight;
+            }
+        }
+    }
+    .bottom_footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            font-size: $font_size;
+            margin: 15px;
+            color: #595353;
+            font-weight: $font_weight;
+        }
+    }
+    @media screen and (max-width:768px) {
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+    @media screen and (max-width:468px) {
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+}

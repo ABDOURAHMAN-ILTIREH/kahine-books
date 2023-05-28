@@ -1,0 +1,7 @@
+.message_content .own{
+    align-items: flex-end;
+}
+.message_content .own p{
+    background-color: red;
+    color: #062c34;
+}

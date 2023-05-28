@@ -1,0 +1,76 @@
+.widget{
+        padding: 10px;
+        box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+        border-radius: 10px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        &:hover{
+            box-shadow: inset 2px 4px 10px 1px rgba(201,201,201,0.47);
+        }
+        .left ,.right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+    
+            .title{
+                font-weight: 300;
+                color: #052733;
+                font-size: 14px;
+            } 
+            .counter{
+                font-size: 25px;
+                font-weight: 300;
+            }
+            .Links
+            {
+                width: max-content;
+                cursor: pointer;
+                padding: 5px 8px;
+                border-radius: 5px;
+                font-size: 12px;
+                border-bottom: 2px solid #052733;
+                text-transform: capitalize;
+                text-decoration: none;
+                background-color: #052733;
+                color: #fff;
+                
+            }
+            .percentage{
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                &.positive{
+                    color: green;
+                }
+                &.negative{
+                    color: red;
+                }
+            }
+            .icon{
+                font-size: 20px;
+                padding: 5px;
+                border-radius: 5px;
+                align-self: flex-end;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .left ,.right{
+                .title{
+                    font-weight: 400;
+                    font-size: 12px;
+                } 
+                .counter{
+                    font-size: 20px;
+                }
+                .percentage{
+                    font-size: 12px;
+                }
+                .icon{
+                    font-size: 18px;
+                }
+            }
+        }
+}
+

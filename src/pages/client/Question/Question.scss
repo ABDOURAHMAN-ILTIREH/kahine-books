@@ -1,0 +1,64 @@
+@import "../../../../src/scss/scss_content_features" ;
+
+.question{
+        background-color: #f5f5f5;
+    .box_question{
+            width: 100%;
+            max-width: 1224px;
+            margin: 0 auto;
+            padding: 50px 10px;
+            // height: 100%;
+            .title{
+                text-align: center;
+                h1{
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: #253535;
+               }
+            }
+        .box_asked_questions{
+            margin-top: 50px;
+    
+            .box_content_questions{
+                padding: 10px 5px;
+                border-radius: 10px;
+                margin-bottom: 5px;
+                background-color: #ffff;
+                cursor: pointer;
+                
+                .top_arrow_questions{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .arrow-icon-question{
+                        width: $font_size_big;
+                        transition: 0.3s ease;
+                        cursor: pointer;
+                        &.up {
+                            transform: rotate(180deg);
+                        }
+                   }
+                }
+                h2{
+                    font-size: 15px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: $color_text;
+                }
+                .aswer{
+                    padding:  7px 5px;
+                    margin-top: 5px;
+                    transition:all 0.3s ease-in-out;
+                    p{
+                        font-size: 14px;
+                        color: $color_text;
+                        text-transform: capitalize;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+ }

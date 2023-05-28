@@ -1,0 +1,277 @@
+.setting {
+    padding: 20px;
+    .top_content{
+       padding: 15px 10px;
+       background-color: #f0f0f0;
+       box-shadow: 2px 4px 5px 1px #c9c9c978;   
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       border-radius: 10px;
+       border-left: 3px solid #0e5c6b;
+       border-right: 3px solid #0e5c6b;
+       margin-bottom: 25px;
+       h1{
+        color: #0e5c6b;
+        font-weight: 300;
+        font-size: 16px;
+       }
+       p{
+        font-size: 14px;
+        color: gray;
+        font-weight: 300;
+       }
+    }
+    .admin_title{
+        font-size: 20px;
+        color: #0e5c6b;
+        font-weight: 600;
+    }
+    .main_content{
+        margin-top: 25px;
+        background-color: #f0f0f0;
+        box-shadow: 2px 4px 5px 1px #c9c9c978;   
+        padding: 20px;
+        border-radius: 10px;
+
+        .banner_image{
+            width: 100%;
+            .img_banner{
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+        .admins_info{
+            display: flex;
+            align-items: center;
+            padding: 20px 70px;
+            position: relative;
+            .left_content{
+               margin-right: 35px;
+               margin-top: 115px;
+                .admins_img{
+                    position: absolute;
+                    top: -80px;
+                    left: 55px;
+                    border-radius: 10px;
+                    padding: 2px;
+                    margin-bottom: 50px;
+                    background-color: #f3f3f3;
+                    img{
+                        border-radius: 10px;
+                        width: 200px;
+                        object-fit: contain;
+                    }
+                }
+                .admins_dec{
+                    .name{
+                        font-size: 14px;   
+                        font-weight: 500;   
+                        text-transform: capitalize;
+                        color: #0e5c6b; 
+                        margin-bottom: 10px;        
+                    }
+                    .maneger{
+                        margin-bottom: 15px;
+                        padding: 8px 12px;
+                        width: 100%;
+                        border: 1px solid #062a3c;
+                        background-color: #062a3c;
+                        font-size: 12px;
+                        color: #fff;
+                        border-radius: 5px;
+                        font-weight: 300;
+                    }
+                    .contact{
+                        margin: 15px 0;
+                        font-size: 14px;
+                        color: gray;
+                        
+                    }
+                    .social_Media{
+                        margin-top: 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        span{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+        
+                            .icons{
+                                color: #03273b;
+                                font-size: 20px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .admins_wrapper{
+            width: 100%;
+            margin-left: 25px;
+            .col{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 25px;
+                .row{
+                  h3{
+                    font-size: 16px;
+                    color: #03273b;
+                    display: block;
+                    margin-bottom: 5px;
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    font-weight: 300;
+                  } 
+                  p{
+                    width: 100%;
+                    background-color: #eae9e9;
+                    padding: 10px 5px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    color: gray;
+                    text-transform: capitalize;
+                    font-weight: 300;
+                  }
+                }
+                button{
+                  margin-bottom: 15px;
+                  padding: 8px 12px;
+                  width: 100%;
+                  border: 1px solid #062a3c;
+                  background-color: #062a3c;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  a{
+                      text-decoration: none;
+                      font-size: 14px;
+                      color: #fff;
+                  }
+                }
+            }
+        }
+    }
+}
+@media  screen and (max-width: 1028px){
+    .setting{
+        .admins_info{
+
+            .admins_wrapper{
+                margin-left: 20px;
+                .col{
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 15px;
+                    .row{
+                      h3{
+                        font-size: 15px;
+                      } 
+                      p{
+                        font-size: 13px;
+                      }
+                    }
+                    button{
+                      margin-bottom: 15px;
+                      padding: 7px 10px;
+                      font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media  screen and (max-width: 820px){
+    .setting{
+        .top_content{
+            h1{
+                font-size: 17px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+        .admin_title{
+            font-size: 18px;
+        }
+        .main_content{
+            .banner_image{
+                width: 100%;
+                .img_banner{
+                    width: 100%;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            .admins_info{
+                align-items: flex-start;
+                padding: 10px 20px;
+                .left_content{
+                    margin-right: 0;
+                    margin-top: 20px;
+                     .admins_img{
+                        position: absolute;
+                         top: 1;
+                         left: 10px;
+                         border-radius: 10px;
+                         padding: 2px;
+                         margin-bottom: 25px;
+                         background-color: #f3f3f3;
+                         img{
+                             width: 100px;  
+                         }
+                     }
+                     .admins_dec{
+                         .name{
+                             font-size: 15px;   
+                             margin-bottom: 10px;        
+                         }
+                         .maneger{
+                             margin-bottom: 10px;
+                             padding: 5px 10px;
+                             font-size: 14px;
+                         }
+                         .contact{
+                             margin: 10px 0;
+                             font-size: 14px;
+                         }
+                         .social_Media{
+                             margin-top: 15px;
+                             span{
+                                 .icons{
+                                     font-size: 16px;
+                                 }
+                             }
+                         }
+                     }
+     
+                 }
+                .admins_wrapper{
+                    margin-left: 20px;
+                    .col{
+                        grid-template-columns: 1fr;
+                        gap: 10px;
+                        .row{
+                          h3{
+                            font-size: 14px;
+                          } 
+                          p{
+                            font-size: 12px;
+                          }
+                        }
+                        button{
+                          margin-bottom: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,200 @@
+@import "./scss_content_features.scss" ;
+
+.dark{
+    background-color: $background_color;
+    color: #dddddd;
+    .scrool_ref{
+        background-color: #062a3c;
+        color: #dddddd;
+
+    }
+    // header dark styless
+    header{
+        .logo{
+            h2{
+                color: #dddddd;
+            }
+        }
+        .wrapper{
+            nav ul li{
+                a, .icons{
+                    color: #dddddd;
+                }
+                .badgets{
+                    background-color: #dddddd;
+                    color: $background_color;
+                }
+            }
+        }
+        .buttons{
+            
+        }
+        .content-user-info{
+            .wrapper-box-profile .box-content-info{
+                   color: #021d2b;
+            }
+        }
+        @media only screen and (max-width:545px){
+            .navbar .wrapper{
+                background-color: $background_color;
+            }
+        }
+    }
+    // home pages dark style
+    .home{
+        .swiper-container .swiper-wrapper{
+            .swiper-slide .container_slider .content .title{
+                color: #dddddd;
+            }
+        }
+    }
+     // Main page dark styless
+    .Main{
+       background-color: $background_color;
+       .text-dec{
+           .title{
+            color: #dddddd ;
+           }
+           button{
+            background-color: #dddddd;
+            color: $color_text;
+           }
+       }
+    }
+    // question page dark styless
+    .question{
+        background-color: $background_color;
+        .title h1{
+            color: #dddddd;
+        }
+        .box_asked .box_content{
+            background-color: #021d2b;
+            .arrow-icon{
+                background-color: #dddddd;
+                border-radius: 50%;
+            }
+            h2{
+                color: #dddddd;
+            }
+            .aswer p{
+                color: $color_text_dark;
+            }
+        }
+    }
+     // footer page dark styless
+    footer{
+        .container{
+            h1{
+                color: $color_text_dark;
+            }
+            p,ul li{
+                color: $color_text_dark;
+            }
+            .social_Media{
+                .icons{
+                    color: $color_text_dark;
+                }
+            }
+        }
+        .bottom_footer{
+          p{
+            color: $color_text_dark;
+          }
+        }
+    }
+
+    // books pages dark styless
+    .books_customer{
+         .books_container .wrapper{
+            background-color: $background_color;
+            .dec_wrapper a{
+                color: $color_text_dark !important;
+            }
+            .dec_wrapper button{
+                    background-color: #dddddd;
+                    color: $color_text;
+            }
+         }
+    }
+    // cart pages dark styless
+    .cart{
+        .content_cart .box_right{
+            .title{
+                color: $color_text_dark;
+            }
+            .button button{
+                background-color: #dddddd;
+                color: $color_text;
+            }
+        }
+        .wrapper_reviews .arrow-icon{
+            background-color: #dddddd;
+            border-radius: 50%;
+        }
+        .title{
+            color: #fff !important;
+        }
+        .commente{
+            background-color: #fff;
+            color: $background_button_color;
+        }
+        .clients_reviews .content_reviews .name_client, .decs_client{
+            color: $color_text_dark !important;
+        }
+        .simulary_products .title{
+            color: $color_text_dark;
+        }
+        .books_container .wrapper{
+            background-color: $background_color;
+            .dec_wrapper a{
+                color: $color_text_dark !important;
+            }
+            .dec_wrapper button{
+                    background-color: #dddddd;
+                    color: $color_text;
+            }
+         }
+    }
+
+    // comments components
+    .commentaire .comment_content {
+     .title{
+        color: $color_text !important;
+     }
+     .start_satisfaction .start{
+         color: $color_text;
+     }
+    }
+    // checkout page styles dark
+    .checkout {
+        .box_right_checkout {
+            color: $color_text !important;  
+        }
+        .box_left_checkout .content_input{
+            .place_order{
+                background-color: #dddddd;
+                color: $color_text;
+            }
+        }
+    }
+     // shop page styles dark
+     .shop .content_products{
+         color: $color_text !important;
+     }
+
+     // message button contact
+     .message_container .content_message{
+        background-color: #ffff;
+        .text_message{
+            color: $color_text;
+        }
+        .icon{
+            color: $color_text;
+        }
+     }
+
+     // profile
+     main .main-account-details{
+           color: #062a3c;
+     }
+}

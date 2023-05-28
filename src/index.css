@@ -1,0 +1,19 @@
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;500;600&family=Open+Sans:wght@300;400;500&display=swap'); */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+
+}
+body{
+  background-color: #f3f3f3;
+}
+.DashLayout{
+  display: flex;
+}
+.DashLayout .DashRouter{
+    flex: 6;
+}
+
